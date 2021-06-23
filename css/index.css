@@ -1,6 +1,6 @@
 body
 {
-background-color: salmon;
+background-image: linear-gradient(to bottom right,#ffccc1, #db5e5f);
 
 text-align: center;
 display: grid;
@@ -8,15 +8,15 @@ place-items: center;
 
 min-height: 100vh;
 
-font-family:sans-serif;
-font-weight: 400;
+font-family: 'Open Sans Condensed', sans-serif;
+color: #473629;
 }
 
 #floatBackground
 {
     background-color: pink;
     box-shadow: 
-    9px 9px 20px tomato;
+    9px 9px 20px #db5e5f;
 
     width: 90%;
     position: absolute;
@@ -24,7 +24,7 @@ font-weight: 400;
 
     border: 10px;
     border-style: solid;
-    border-color: white;
+    border-color: #ffe5df;
     border-radius: 40px;
 }
 
@@ -32,7 +32,7 @@ font-weight: 400;
 {
     width:100%;
     margin: 0 auto;
-    height: 800px;
+    height: 700px;
     
     background-color: tomato;
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), 
@@ -56,13 +56,6 @@ header
     position: sticky;
     top: 0;
 }
-
-/* header::after
-{
-    content: '';
-    display: inline;
-    clear: both;
-} */
 
 .hero
 {
@@ -90,32 +83,13 @@ nav a
     letter-spacing: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 30px;
 }
 
 nav a:hover
 {
 text-decoration-line: underline;
 }
-
-/* nav a::before
-{
-    content '';
-    display: block;
-    height: 5px;
-    background-color: #444;
-
-    position: absolute;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before
-{
-    width: 100%;
-} */
 
 .button
 {
@@ -133,26 +107,26 @@ nav a:hover::before
 
 .button :hover
 {
-    background-color: white;
-    border-color: black;
+    background-color: #ffe5df;
+    border-color: #473629;
 }
 
 #name
 {
-    color: brown;
+    color: #473629;
 
     position: absolute;
     top: -80px;
     left: 50px;
 
     text-align: left;
-    font-family: cursive;
+    font-family: 'Lemon', cursive;
     font-size: 150px;
 }
 
 #designer
 {
-    color: brown;
+    color: #473629;
     opacity: 16%;
 
     position: absolute;
@@ -160,22 +134,22 @@ nav a:hover::before
     left: 200px;
 
     letter-spacing: 50px;
-    font-family: sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 100px;
 }
 
 .separator
 {
-    background-color: white;
+    background-color: #ffe5df;
     text-align: center;
 }
 
 h2
 {
-    color: brown;
+    color: #473629;
 
     padding: 10px;
 
-    font-family: cursive;
-    font-size: 30px;
+    font-family: 'Lemon', cursive;
+    font-size: 35px;
 }
