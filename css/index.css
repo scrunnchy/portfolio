@@ -1,20 +1,48 @@
 body
 {
-background-image: linear-gradient(to bottom right,#ffccc1, #db5e5f);
+    background-image: linear-gradient(to bottom right,#ffccc1, #db5e5f);
+    
+    text-align: center;
+    display: grid;
+    place-items: center;
+    
+    min-height: 100vh;
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #473629;
+}
 
-text-align: center;
-display: grid;
-place-items: center;
+h2
+{
+    color: #473629;
 
-min-height: 100vh;
+    padding: 10px;
 
-font-family: 'Open Sans Condensed', sans-serif;
-color: #473629;
+    font-family: 'Lemon', cursive;
+    font-size: 35px;
+}
+
+h3
+{
+    color: #473629;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px; 
+}
+
+h4
+{
+    color: #ffe5df;
+
+    text-transform: capitalize;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px; 
 }
 
 #floatBackground
 {
-    background-color: pink;
+    background-color: peachpuff;
     box-shadow: 
     9px 9px 20px #db5e5f;
 
@@ -28,14 +56,14 @@ color: #473629;
 
 nav
 {
- float: right;   
+ float: left; 
+ margin-left: 50px; 
+ position: sticky; 
+ top: 0px;
 }
 
 header
 {   
-    position: sticky;
-    top: 0;
-
     width:100%;
     margin: 0 auto;
     height: 700px;
@@ -47,7 +75,6 @@ header
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
 
     border-radius: 30px 30px 0 0;
 }
@@ -68,7 +95,7 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin: 25px;
+    margin: 20px 100px;
     padding: 25px;
     position: relative;
 }
@@ -86,19 +113,23 @@ nav a:hover
 text-decoration-line: underline;
 }
 
-.button
+button
 {
     background-color: pink;
 
     display: inline-block;
-    width: 20%;
-    margin: 50px;
+    width: 200px;
+    height: 70px;
 
     border: 5px solid #473629;
     border-radius: 100px;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #473629;
 }
 
-.button :hover
+button :hover
 {
     background-color: #ffe5df;
     border-color: #473629;
@@ -109,7 +140,7 @@ text-decoration-line: underline;
     color: #473629;
 
     position: absolute;
-    top: -80px;
+    bottom: 30px;
     left: 50px;
 
     text-align: left;
@@ -135,14 +166,141 @@ text-decoration-line: underline;
 {
     background-color: #ffe5df;
     text-align: center;
+    vertical-align: middle;
+
+    /* position: relative; */ /*can't use this or else the floatingBG ignores the element */
+    width: 100%;
+    height: 60px;
 }
 
-h2
+/* leftProjectPreview selectors */
+
+.leftProjectPreview
 {
-    color: #473629;
+    position: relative;
+    /* top: 180px; */
+}
 
-    padding: 10px;
+.leftProjectPreview img
+{
+    float: left;
+    size: 750px 300px;
+}
 
-    font-family: 'Lemon', cursive;
-    font-size: 35px;
+.leftProjectPreview article
+{
+    background-color: pink;
+
+    text-align: left;
+    display: inline-block;
+    height: 180px;
+    width: 350px;
+
+    position: relative;
+    top: 150px;
+    right: 200px;
+
+    border: 5px solid #ffe5df;
+    border-radius: 40px;
+}
+
+.leftProjectPreview article p
+{
+    margin: 20px;
+    word-wrap: break-word;
+}
+
+.leftProjectPreview article h3
+{
+    margin: -5px 15px;
+}
+
+.leftProjectPreview article h4
+{
+    margin: 0px 30px;
+}
+
+.leftProjectPreview div
+{
+    text-align: left;
+    display: inline-block;
+    
+
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+
+.leftProjectPreview button
+{
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+/* rightProjectPreview selectors */
+
+.rightProjectPreview
+{
+    background-color: pink;
+    position: relative;
+    top: 180px;
+}
+
+.rightProjectPreview img
+{
+    float: right;
+
+    size: 750px 300px;
+}
+
+.rightProjectPreview article
+{
+    background-color: pink;
+
+    text-align: left;
+    display: inline-block;
+    height: 180px;
+    width: 350px;
+
+    position: relative;
+    bottom: 150px;
+    left: 500px;
+
+    border: 5px solid #ffe5df;
+    border-radius: 40px;
+}
+
+.rightProjectPreview article p
+{
+    margin: 20px;
+    word-wrap: break-word;
+}
+
+.rightProjectPreview article h3
+{
+    margin: -5px 15px;
+}
+
+.rightProjectPreview article h4
+{
+    margin: 0px 30px;
+}
+
+.rightProjectPreview div
+{
+    text-align: left;
+    display: inline-block;
+    
+
+    position: relative;
+    bottom: 100px;
+    right: 300px;
+}
+
+.rightProjectPreview button
+{
+    position: relative;
+    bottom: 50px;
+    right: 100px;
 }
