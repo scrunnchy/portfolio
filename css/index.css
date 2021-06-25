@@ -16,8 +16,6 @@ h2
 {
     color: #473629;
 
-    padding: 10px;
-
     font-family: 'Lemon', cursive;
     font-size: 35px;
 }
@@ -32,7 +30,7 @@ h3
 
 h4
 {
-    color: #ffe5df;
+    color: #fffbf6;
 
     text-transform: capitalize;
 
@@ -42,7 +40,7 @@ h4
 
 #floatBackground
 {
-    background-color: peachpuff;
+    background-color: #fff0e5;
     box-shadow: 
     9px 9px 20px #db5e5f;
 
@@ -50,27 +48,29 @@ h4
     position: absolute;
     top: 50px;
 
-    border: 10px solid #ffe5df;
+    border: 10px solid #fffbf6;
     border-radius: 40px;
 }
 
 nav
 {
- float: left; 
- margin-left: 50px; 
- position: sticky; 
- top: 0px;
+    display: flex;
+    align-items: flex-start;
+ /* float: left;  */
+ /* margin-left: 50px;  */
+    position: sticky; /*does't work with flex?*/
+    /* top: 0px; */
 }
 
 header
 {   
     width:100%;
     margin: 0 auto;
-    height: 700px;
+    height: 700px; /* TODO:replace this*/
     
     background-color: tomato;
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), 
-    url("../images/flower.jpg");
+    url("../images/Header_portrait.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -81,13 +81,12 @@ header
 
 .hero
 {
-    
     align-content: stretch;
 }
 
 nav ul
 {
-    margin: 0;
+    margin-left: 5rem;
     padding: 0;
     list-style: none;
 }
@@ -95,8 +94,8 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin: 20px 100px;
-    padding: 25px;
+    margin: 2rem 3rem;
+    /* padding: 25px; */
     position: relative;
 }
 
@@ -140,12 +139,12 @@ button :hover
     color: #473629;
 
     position: absolute;
-    bottom: 30px;
-    left: 50px;
+    top: 0;
+    left: 5rem;
 
     text-align: left;
     font-family: 'Lemon', cursive;
-    font-size: 150px;
+    font-size: 120px;
 }
 
 #designer
@@ -154,12 +153,12 @@ button :hover
     opacity: 16%;
 
     position: absolute;
-    top: 450px;
-    left: 200px;
+    top: 30rem;
+    left: 5rem;
 
     letter-spacing: 50px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .separator
@@ -168,39 +167,44 @@ button :hover
     text-align: center;
     vertical-align: middle;
 
-    /* position: relative; */ /*can't use this or else the floatingBG ignores the element */
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
     width: 100%;
-    height: 60px;
 }
 
-/* leftProjectPreview selectors */
+/* -------------- leftProjectPreview selectors -------------- */
 
 .leftProjectPreview
 {
     position: relative;
-    /* top: 180px; */
+}
+
+.backgroundContent
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 .leftProjectPreview img
 {
-    float: left;
-    size: 750px 300px;
+    max-width: 737px;
+    max-height: 431px;
 }
 
 .leftProjectPreview article
 {
-    background-color: pink;
+    background-color: #ffccc1;
 
     text-align: left;
     display: inline-block;
-    height: 180px;
-    width: 350px;
+    width: 300px;
 
-    position: relative;
+    position: absolute;
     top: 150px;
-    right: 200px;
+    right: 450px;
 
-    border: 5px solid #ffe5df;
+    border: 5px solid #fffbf6;
     border-radius: 40px;
 }
 
@@ -220,54 +224,45 @@ button :hover
     margin: 0px 30px;
 }
 
-.leftProjectPreview div
+#leftBox
 {
+    margin-right: 3rem;
+    margin-top: 2rem;
     text-align: left;
-    display: inline-block;
-    
-
-    position: relative;
-    top: 100px;
-    right: 100px;
 }
 
 .leftProjectPreview button
 {
-    position: relative;
-    top: 150px;
-    left: 100px;
+    margin-top: 3rem;
 }
 
-/* rightProjectPreview selectors */
+/* -------------- rightProjectPreview selectors -------------- */
 
 .rightProjectPreview
 {
-    background-color: pink;
+    background-color: #ffe5df;
     position: relative;
-    top: 180px;
 }
 
 .rightProjectPreview img
 {
-    float: right;
-
-    size: 750px 300px;
+    max-width: 737px;
+    max-height: 431px;
 }
 
 .rightProjectPreview article
 {
-    background-color: pink;
+    background-color: #ffccc1;
 
     text-align: left;
     display: inline-block;
-    height: 180px;
-    width: 350px;
+    width: 300px;
 
-    position: relative;
-    bottom: 150px;
-    left: 500px;
+    position: absolute;
+    top: 150px;
+    left: 450px;
 
-    border: 5px solid #ffe5df;
+    border: 5px solid #fffbf6;
     border-radius: 40px;
 }
 
@@ -287,20 +282,14 @@ button :hover
     margin: 0px 30px;
 }
 
-.rightProjectPreview div
+#rightBox
 {
+    margin-left: 3rem;
+    margin-top: 2rem;
     text-align: left;
-    display: inline-block;
-    
-
-    position: relative;
-    bottom: 100px;
-    right: 300px;
 }
 
 .rightProjectPreview button
 {
-    position: relative;
-    bottom: 50px;
-    right: 100px;
+    margin-top: 3rem;
 }
