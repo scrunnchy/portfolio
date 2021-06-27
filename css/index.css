@@ -41,8 +41,7 @@ h4
 #floatBackground
 {
     background-color: #fff0e5;
-    box-shadow: 
-    9px 9px 20px #db5e5f;
+    box-shadow: 9px 9px 20px #db5e5f;
 
     width: 90%;
     position: absolute;
@@ -55,11 +54,22 @@ h4
 nav
 {
     display: flex;
-    align-items: flex-start;
- /* float: left;  */
- /* margin-left: 50px;  */
-    position: sticky; /*does't work with flex?*/
-    /* top: 0px; */
+    align-self: flex-start;
+}
+
+#navigation
+{
+
+    /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
+
+    position:sticky;
+    top:0;
+    align-self: flex-start;
+    z-index: 2000;
+
+    background-color: #ffccc1;
+    border: 10px solid #fffbf6;
+    border-radius: 100px;
 }
 
 header
@@ -163,7 +173,7 @@ button :hover
 
 .separator
 {
-    background-color: #ffe5df;
+    background-color: #fffbf6;
     text-align: center;
     vertical-align: middle;
 
@@ -211,7 +221,6 @@ button :hover
 .leftProjectPreview article p
 {
     margin: 20px;
-    word-wrap: break-word;
 }
 
 .leftProjectPreview article h3
@@ -269,7 +278,6 @@ button :hover
 .rightProjectPreview article p
 {
     margin: 20px;
-    word-wrap: break-word;
 }
 
 .rightProjectPreview article h3
@@ -292,4 +300,136 @@ button :hover
 .rightProjectPreview button
 {
     margin-top: 3rem;
+}
+
+/* -------------- carousel selectors -------------- */
+#carousel
+{
+    position: relative;
+}
+
+#items
+{
+    display:flex;
+    justify-content:space-around;
+    margin: 25px;
+    /* margin-right: 50px; */
+}
+
+.item
+{
+    text-align: center;
+    
+    color: #fffbf6;
+    font-size: 30px;
+
+    padding-top: 25px;
+}
+
+.sp0
+{
+    min-height: 250px;
+    width: 437px;
+    margin: 5px;
+    /* line-height: 150px; */
+
+    text-shadow: 2px 2px #473629;
+    cursor: pointer;
+
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
+    url("../images/icons.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sp1
+{
+    min-height: 250px;
+    width: 437px;
+    /* line-height: 150px; */
+    margin: 5px;
+
+    text-shadow: 2px 2px #473629;
+    cursor: pointer;
+
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
+    url("../images/Witcher_testScene.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sp2
+{
+    min-height: 250px;
+    width: 437px;
+    /* line-height: 150px; */
+    margin: 5px;
+
+    text-shadow: 2px 2px #473629;
+    cursor: pointer;
+
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
+    url("../images/pepsi\ horror_splash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sp3
+{
+    min-height: 250px;
+    width: 437px;
+    /* line-height: 150px; */
+    margin: 5px;
+
+    text-shadow: 2px 2px #473629;
+    cursor: pointer;
+
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
+    url("../images/change\ management.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sp0:hover
+{
+    background-image: url("../images/icons.png");
+    color: transparent;
+    text-shadow: 2px 2px transparent;
+}
+
+.sp1:hover
+{
+    background-image: url("../images/Witcher_testScene.png");
+    color: transparent;
+    text-shadow: 2px 2px transparent;
+}
+
+.sp2:hover
+{
+    background-image: url("../images/pepsi\ horror_splash.png");
+    color: transparent;
+    text-shadow: 2px 2px transparent;
+}
+
+.sp3:hover
+{
+    background-image: url("../images/change\ management.png");
+    color: transparent;
+    text-shadow: 2px 2px transparent;
+}
+
+/* -------------- footer selectors -------------- */
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    color: #473629;
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px; 
 }
