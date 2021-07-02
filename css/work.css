@@ -1,0 +1,251 @@
+@font-face {
+    font-family: YesevaOne;
+    src: url("../fonts/YesevaOne-Regular.ttf");
+}
+
+body
+{
+    background-image: linear-gradient(to bottom right,#ffccc1, #db5e5f);
+    background-attachment: fixed;
+    
+    text-align: center;
+    display: grid;
+    place-items: center;
+    
+    min-height: 100vh;
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #473629;
+}
+
+h2
+{
+    color: #473629;
+
+    font-family: 'YesevaOne', cursive;
+    font-size: 35px;
+}
+
+h3
+{
+    color: #473629;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px; 
+}
+
+h4
+{
+    color: #fffbf6;
+
+    text-transform: capitalize;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px; 
+}
+
+#floatBackground
+{
+    background-color: #fff0e5;
+    box-shadow: 9px 9px 20px #db5e5f;
+
+    width: 90%;
+    position:static;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border: 10px solid #fffbf6;
+    border-radius: 40px;
+}
+
+/* -------------- Navigation and Hero selectors -------------- */
+
+header
+{   
+    width:100%;
+    margin: 0 auto;
+    height: 700px; /* TODO:replace this*/
+    
+    background-image: url("../images/Header_portrait.png");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 30px 30px 0 0;
+}
+
+nav
+{
+    display: flex;
+}
+
+#navigation
+{
+
+    /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
+
+    /* position:sticky;
+    top:0;
+    align-self: flex-start;
+    z-index: 2000;
+
+    background-color: #ffccc1;
+    border: 10px solid #fffbf6;
+    border-radius: 100px; */
+}
+
+nav ul
+{
+    width: 88%;
+    margin-left: 5rem;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li
+{
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+}
+
+nav i
+{
+    margin-top: 1rem;
+    margin-left: 35rem;
+    color: #473629;
+}
+
+nav a
+{
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+nav a:hover
+{
+text-decoration-line: underline;
+}
+
+.button
+{
+    background-image: url("../images/button_normal.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+    background-size: contain;
+    background-position: bottom;
+
+    display: inline-block;
+    width: 233px;
+    height: 78px;
+
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #473629;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.button :hover
+{
+    /* TREATS TEXT AS THE HOVER OBJECT, NOT IMAGE */
+
+    /* background-image: url("../images/button_hover.svg");
+    background-size: cover; */
+
+}
+
+#name
+{
+    color: #473629;
+
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+
+    text-align: left;
+    font-family: 'YesevaOne', cursive;
+    font-size: 150px;
+}
+
+#designer
+{
+    color: #473629;
+    opacity: 16%;
+
+    position: absolute;
+    top: 25rem;
+    left: 15rem;
+
+    letter-spacing: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 150px;
+}
+
+.separator
+{
+    background-color: #fffbf6;
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -------------- Overview selectors -------------- */
+
+#overview
+{
+    background-color: black;
+    display: grid;
+}
+
+#overview img
+{
+    max-height: 747px;
+} 
+
+#leftBox
+{
+    background-color: blue;
+    text-align: left;
+}
+
+
+#overview li
+{
+
+}
+
+#tools
+{
+    padding: 2rem;
+}
+
+#tools img
+{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0.5rem;
+}
+
+#rightBox
+{
+    background-color: red;
+}
+
+#rightBox ul
+{
+    text-align: left;
+}
