@@ -98,8 +98,10 @@ nav ul
 {
     width: 100%;
     background-color: #fffbf6;
-    /* margin-left: 5rem; */
     list-style: none;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: flex;
     justify-content: flex-start;
@@ -354,11 +356,6 @@ text-decoration-line: underline;
 
 @media screen and (max-width: 992px) {
 
-    body
-    {
-        /* MAKE FIT THE SCREEN */
-    }
-
     h2
     {
         font-size: 35px;
@@ -372,12 +369,6 @@ text-decoration-line: underline;
     h4
     {
         font-size: 30px;
-    }
-
-    #floatBackground
-    {
-
-        /* MAKE CENTERED */
     }
 
     /* -------------- Navigation and Hero selectors -------------- */

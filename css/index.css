@@ -5,15 +5,13 @@
 
 body
 {
-    background-image: linear-gradient(to bottom right,#ffccc1, #db5e5f);
-    background-attachment: fixed;
-    
+    background: rgb(255,204,193);
+    background: linear-gradient(144deg, rgba(255,204,193,1) 7%, rgba(219,94,95,1) 100%); 
+
     text-align: center;
     display: grid;
     place-items: center;
-    
-    min-height: 100vh;
-    
+
     font-family: 'Open Sans Condensed', sans-serif;
     color: #473629;
 }
@@ -98,7 +96,7 @@ nav
 
 nav ul
 {
-    width: 88%;
+    width: 100%;
     margin-left: 5rem;
     list-style: none;
 
@@ -195,11 +193,9 @@ text-decoration-line: underline;
 {
     background-color: #fffbf6;
     text-align: center;
-    vertical-align: middle;
-
+    
     display: flex;
-    align-content: flex-start;
-    justify-content: center;
+    place-content: center;
     width: 100%;
 }
 
