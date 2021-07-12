@@ -79,6 +79,13 @@ nav
     display: flex;
 }
 
+.navIcon
+{
+    position: absolute;
+    visibility:hidden;
+    cursor: pointer;
+}
+
 #navigation
 {
 
@@ -376,10 +383,25 @@ text-decoration-line: underline;
     nav
     {
         display: flex;
+        /* GET RID OF NAV */
+        visibility: hidden;
+    
+        background-color: #fff0e5;
+        border: 10px solid #fffbf6;
+        border-radius: 25px;
+    }
+    
+    .navIcon{
+        visibility: visible;
+        right:10%;
+        top: 10%;
+        width: 20%;
     }
 
     #navigation
     {
+        
+
         /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
 
         /* position:sticky;
@@ -394,13 +416,11 @@ text-decoration-line: underline;
 
     nav ul
     {
-        /* GET RID OF NAV */
-        visibility: hidden;
-
         /* OPEN DRAWER */
         width: 100%;
         flex-direction: column;
         place-items: center;
+        background-color: unset;
     }
 
     nav li
@@ -413,6 +433,7 @@ text-decoration-line: underline;
     {
         /* OPEN DRAWER */
         margin-top: 5rem;
+        margin-left: 0;
     }
 
     nav a
@@ -421,7 +442,7 @@ text-decoration-line: underline;
         letter-spacing: 3px;
         font-size: 30px;
     }
-
+    
     .button
     {
         /* OPEN DRAWER */
