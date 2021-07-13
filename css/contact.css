@@ -57,6 +57,21 @@ h4
     border-radius: 40px;
 }
 
+#scrollIcon{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 3vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 10px solid #fffbf6;
+    border-radius: 40px;
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
 /* -------------- Navigation and Hero selectors -------------- */
 
 header
@@ -80,7 +95,15 @@ header
 
 nav
 {
+    visibility: visible;
     display: flex;
+}
+
+.navIcon
+{
+    position: absolute;
+    visibility:hidden;
+    cursor: pointer;
 }
 
 #navigation
@@ -88,14 +111,10 @@ nav
 
     /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
 
-    /* position:sticky;
+    position:sticky;
     top:0;
     align-self: flex-start;
-    z-index: 2000;
-
-    background-color: #ffccc1;
-    border: 10px solid #fffbf6;
-    border-radius: 100px; */
+    z-index: 99;
 }
 
 nav ul
@@ -159,15 +178,6 @@ text-decoration-line: underline;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 30px;
-}
-
-.button :hover
-{
-    /* TREATS TEXT AS THE HOVER OBJECT, NOT IMAGE */
-
-    /* background-image: url("../images/button_hover.svg");
-    background-size: cover; */
-
 }
 
 #name
@@ -287,32 +297,31 @@ text-decoration-line: underline;
     nav
     {
         display: flex;
+        /* GET RID OF NAV */
+
+        /* DOES NOT MARK AS HIDDEN IF INITIALLY IN DESKTOP VIEW */
+        visibility: hidden;
+        
+        background-color: #fff0e5;
+        border: 10px solid #fffbf6;
+        border-radius: 25px;
     }
     
-    #navigation
+    .navIcon
     {
-    
-        /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
-    
-        /* position:sticky;
-        top:0;
-        align-self: flex-start;
-        z-index: 2000;
-    
-        background-color: #ffccc1;
-        border: 10px solid #fffbf6;
-        border-radius: 100px; */
+        visibility: visible;
+        right:2%;
+        top: 2%;
+        width: 20%;
     }
     
     nav ul
     {
-        /* GET RID OF NAV */
-        display: none;
-
         /* OPEN DRAWER */
         width: 100%;
         flex-direction: column;
         place-items: center;
+        background-color: unset;
     }
 
     nav li
@@ -325,6 +334,7 @@ text-decoration-line: underline;
     {
         /* OPEN DRAWER */
         margin-top: 5rem;
+        margin-left: 0;
     }
 
     nav a
@@ -333,7 +343,7 @@ text-decoration-line: underline;
         letter-spacing: 3px;
         font-size: 30px;
     }
-
+    
     .button
     {
         /* OPEN DRAWER */
@@ -346,7 +356,7 @@ text-decoration-line: underline;
 
         letter-spacing: 3px;
         font-size: 30px;
-    }    
+    }
     
     #name
     {
@@ -365,6 +375,7 @@ text-decoration-line: underline;
     
     #contact
     {
+        /* LEAVES SPACE FOR NAV EVEN WHEN CLOSED */
         width: 90%;
         margin: 0 3vw;
     }
