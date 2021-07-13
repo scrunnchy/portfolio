@@ -14,3 +14,7 @@ $(".navIcon").on("click", function(){
     }
 
 });
+
+if($(window).width() > 1000){
+    $("nav").css("visibility", "visible");
+}
