@@ -505,3 +505,171 @@ text-decoration-line: underline;
 {
     color: #473629;
 }
+
+/* -------------- mobile queries -------------- */
+
+@media screen and (max-width: 1000px) {
+    
+
+    h2
+    {
+        font-size: 35px;
+    }
+    
+    h3
+    {
+        font-size: 30px; 
+    }
+    
+    h4
+    {
+        font-size: 30px; 
+    }
+
+    
+    /* -------------- Navigation and Hero selectors -------------- */
+    
+    nav
+    {
+        display: flex;
+        /* GET RID OF NAV */
+        visibility: hidden;
+    
+        background-color: #fff0e5;
+        border: 10px solid #fffbf6;
+        border-radius: 25px;
+    }
+    
+    .navIcon
+    {
+        visibility: visible;
+        right:10%;
+        top: 10%;
+        width: 20%;
+    }
+    
+    nav ul
+    {
+        /* OPEN DRAWER */
+        width: 100%;
+        flex-direction: column;
+        place-items: center;
+        background-color: unset;
+    }
+
+    nav li
+    {
+        /* OPEN DRAWER */
+        margin-top: 4rem;
+    }
+
+    nav i
+    {
+        /* OPEN DRAWER */
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+
+    nav a
+    {
+        /* OPEN DRAWER */
+        letter-spacing: 3px;
+        font-size: 30px;
+    }
+    
+    .button
+    {
+        /* OPEN DRAWER */
+        display: inline-block;
+        width: 233px;
+        height: 78px;
+        margin-top: 4rem;
+
+        font-size: 20px;
+
+        letter-spacing: 3px;
+        font-size: 30px;
+    }
+    
+    /* -------------- leftProjectPreview selectors -------------- */
+    
+    .backgroundContent
+    {
+        justify-content: unset;
+        flex-direction: column;
+    }
+    
+    .leftProjectPreview img
+    {
+        max-width: 100%;
+        max-height: unset;
+    }
+    
+    .leftProjectPreview article
+    {
+        width: 80%;
+        
+        position:unset;
+        margin: 30px auto;
+    }
+    
+    #leftBox
+    {
+        margin: 0 auto;
+    }
+    
+    /* -------------- rightProjectPreview selectors -------------- */
+    
+    /* MAKE IMAGE ON TOP */
+    
+    .rightProjectPreview img
+    {
+        max-width: 100%;
+        max-height: unset;
+    }
+    
+    .rightProjectPreview article
+    {
+        width: 80%;
+        
+        position:unset;
+        margin: 30px auto;
+    }
+    
+    #rightBox
+    {
+        margin: 0 auto;
+    }
+    
+    /* -------------- carousel selectors -------------- */
+
+    #items
+    {
+        flex-wrap: wrap;
+    }
+    
+    .item
+    {
+        font-size: 30px;
+    }
+    
+    /* -------------- footer selectors -------------- */
+    
+    .footer
+    {
+        display: flex;
+        justify-content:center;
+
+        font-size: 16px;
+    }
+
+    .footer li
+    {
+        visibility: hidden;
+    }
+
+    .footer i
+    {
+        /* MAKE LARGER */
+    }
+}
