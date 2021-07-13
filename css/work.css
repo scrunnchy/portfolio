@@ -76,6 +76,7 @@ header
 
 nav
 {
+    visibility: visible;
     display: flex;
 }
 
@@ -582,6 +583,13 @@ text-decoration-line: underline;
         /* MAKE LARGER */
     }
 
-
+    
 }
 
+@media screen and (min-width: 1001px)
+{
+    nav
+    {
+        visibility: visible;
+    }
+}
