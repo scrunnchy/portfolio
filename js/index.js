@@ -15,8 +15,14 @@ $(".navIcon").on("click", function(){
 
 });
 
-if($(window).width() > 1000){
-    $("nav").css("visibility", "visible");
+window.onresize = function(){
+  if($(window).width() > 1000){
+      $("nav").css("visibility", "visible");
+  }
+  else if($(window).width() <= 1000)
+  {
+    $("nav").css("visibility", "hidden");
+  }
 }
 
 //Get the button:

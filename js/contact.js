@@ -17,6 +17,7 @@ $(".navIcon").on("click", function(){
 
 if($(window).width() > 1000){
     $("nav").css("visibility", "visible");
+    $("header").css("backgroundImage", "url('../images/header_portrait2_flipped.png')");
 }
 
 //Get the button:

@@ -108,13 +108,13 @@ nav
 
 #navigation
 {
-
+    /* background-color: rgb(255,0,0,.2); */
     /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
-
-    position:sticky;
+    /* GET RID OF STICKY */
+    /* position:sticky;
     top:0;
     align-self: flex-start;
-    z-index: 99;
+    z-index: 99; */
 }
 
 nav ul
@@ -122,10 +122,10 @@ nav ul
     width: 100%;
     background-color: #fffbf6;
     list-style: none;
-
+    
     padding-top: 1rem;
     padding-bottom: 1rem;
-
+    
     display: flex;
     justify-content: flex-start;
 }
@@ -153,7 +153,7 @@ nav a
 
 nav a:hover
 {
-text-decoration-line: underline;
+    text-decoration-line: underline;
 }
 
 .button
@@ -164,17 +164,17 @@ text-decoration-line: underline;
     border-color: transparent;
     background-size: contain;
     background-position: bottom;
-
+    
     display: inline-block;
     width: 233px;
     height: 78px;
     margin-left:3vw;
-
+    
     cursor: pointer;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     color: #473629;
-
+    
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 30px;
@@ -183,11 +183,11 @@ text-decoration-line: underline;
 #name
 {
     color: #473629;
-
+    
     position: absolute;
     bottom: 0;
     left: 35vw;
-
+    
     text-align: left;
     font-family: 'YesevaOne', cursive;
     font-size: 8vw;
@@ -197,7 +197,7 @@ text-decoration-line: underline;
 {
     background-color: #FFCCC1;
     padding: 30px;
-
+    
     border:6px solid #473629;
     border-radius: 40px;
 }
@@ -294,12 +294,11 @@ text-decoration-line: underline;
         background-position: top;
     }
 
+
     nav
     {
         display: flex;
         /* GET RID OF NAV */
-
-        /* DOES NOT MARK AS HIDDEN IF INITIALLY IN DESKTOP VIEW */
         visibility: hidden;
         
         background-color: #fff0e5;
@@ -314,6 +313,15 @@ text-decoration-line: underline;
         top: 2%;
         width: 20%;
     }
+
+    #navigation
+{
+    width: 85%;
+    position:fixed;
+    margin: 2rem 3vw;
+    align-self: flex-start;
+    z-index: 99;
+}
     
     nav ul
     {
@@ -361,6 +369,7 @@ text-decoration-line: underline;
     #name
     {
         top: 4rem;
+        bottom:unset;
         left: 10vw;
     }
     
