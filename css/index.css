@@ -79,7 +79,7 @@ header
     margin: 0 auto;
     height: 700px;
 
-    background-image: url("../images/Header_portrait.png");
+    background-image: url("../images/site_images/Header_portrait.png");
     max-width: 100vw;
 
     background-position: right;
@@ -108,10 +108,10 @@ nav
 
     /* ONLY SCROLLS WITHIN FLEX CONTAINER, NO POPUP BACKGROUND */
 
-    position:sticky;
+    /* position:sticky;
     top:0;
     align-self: flex-start;
-    z-index: 99;
+    z-index: 99; */
 }
 
 nav ul
@@ -155,7 +155,7 @@ text-decoration-line: underline;
 
 .button
 {
-    background-image: url("../images/button_normal.svg");
+    background-image: url("../images/site_images/button_normal.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     border-color: transparent;
@@ -386,7 +386,7 @@ text-decoration-line: underline;
     cursor: pointer;
 
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
-    url("../images/icons.png");
+    url("../images/projects/DarkestDungeonIcons/icons.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -401,7 +401,7 @@ text-decoration-line: underline;
     cursor: pointer;
 
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
-    url("../images/Witcher_testScene.png");
+    url("../images/projects/WitcherHUD/Witcher_testScene.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,7 +416,7 @@ text-decoration-line: underline;
     cursor: pointer;
 
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
-    url("../images/pepsi\ horror_splash.png");
+    url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +431,7 @@ text-decoration-line: underline;
     cursor: pointer;
 
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
-    url("../images/change\ management.png");
+    url("../images/projects/ChangeMGMT/home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -439,28 +439,28 @@ text-decoration-line: underline;
 
 .sp0:hover
 {
-    background-image: url("../images/icons.png");
+    background-image: url("../images/projects/DarkestDungeonIcons/icons.png");
     color: transparent;
     text-shadow: 2px 2px transparent;
 }
 
 .sp1:hover
 {
-    background-image: url("../images/Witcher_testScene.png");
+    background-image: url("../images/projects/WitcherHUD/Witcher_testScene.png");
     color: transparent;
     text-shadow: 2px 2px transparent;
 }
 
 .sp2:hover
 {
-    background-image: url("../images/pepsi\ horror_splash.png");
+    background-image: url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
     color: transparent;
     text-shadow: 2px 2px transparent;
 }
 
 .sp3:hover
 {
-    background-image: url("../images/change\ management.png");
+    background-image: url("../images/projects/ChangeMGMT/home.png");
     color: transparent;
     text-shadow: 2px 2px transparent;
 }

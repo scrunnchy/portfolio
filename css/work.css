@@ -79,7 +79,7 @@ header
     margin: 0 auto;
     height: 700px;
 
-    background-image: url("../images/nyaa.png");
+    background-image: url("../images/projects/Nyaa-kuza/menuBG.png");
     max-width: 100vw;
 
     background-position: center;
@@ -158,7 +158,7 @@ text-decoration-line: underline;
 
 .button
 {
-    background-image: url("../images/button_normal.svg");
+    background-image: url("../images/site_images/button_normal.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     border-color: transparent;

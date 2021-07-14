@@ -3,21 +3,27 @@ $(".navIcon").on("click", function(){
     if($(this).hasClass("closed"))
     {
         // alert("closed");
-        $(this).attr("src", "images/mobile_button_pressed.svg").removeClass("closed");
+        $(this).attr("src", "images/site_images/mobile_button_pressed.svg").removeClass("closed");
         $("nav").css("visibility", "visible");
     }
     else
     {
         // alert("open");
-        $(this).attr("src", "images/mobile_button_normal.svg").addClass("closed");
+        $(this).attr("src", "images/site_images/mobile_button_normal.svg").addClass("closed");
         $("nav").css("visibility", "hidden");
     }
 
 });
 
-if($(window).width() > 1000){
-    $("nav").css("visibility", "visible");
-    $("header").css("backgroundImage", "url('../images/header_portrait2_flipped.png')");
+window.onresize = function(){
+  if($(window).width() > 1000){
+      $("nav").css("visibility", "visible");
+      $("header").css("backgroundImage", "url('../images/site_images/header_portrait2.png')");
+  }
+  else{
+    $("nav").css("visibility", "hidden");
+    $("header").css("backgroundImage", "url('../images/site_images/header_portrait2_flipped.png')");
+}
 }
 
 //Get the button:
@@ -45,10 +51,10 @@ $(".button").hover(function(){
   // alert("hit");
   if($(this).hasClass("normal"))
   {
-    $(".button").css("backgroundImage", "url('../images/button_hover.svg')").removeClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_hover.svg')").removeClass("normal");
   }
   else
   {
-    $(".button").css("backgroundImage", "url('../images/button_normal.svg')").addClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_normal.svg')").addClass("normal");
   }
-});
+  });

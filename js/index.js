@@ -3,13 +3,13 @@ $(".navIcon").on("click", function(){
     if($(this).hasClass("closed"))
     {
         // alert("closed");
-        $(this).attr("src", "images/mobile_button_pressed.svg").removeClass("closed");
+        $(this).attr("src", "images/site_images/mobile_button_pressed").removeClass("closed");
         $("nav").css("visibility", "visible");
     }
     else
     {
         // alert("open");
-        $(this).attr("src", "images/mobile_button_normal.svg").addClass("closed");
+        $(this).attr("src", "images/site_images/mobile_button_normal.svg").addClass("closed");
         $("nav").css("visibility", "hidden");
     }
 
@@ -50,10 +50,10 @@ $(".button").hover(function(){
   // alert("hit");
   if($(this).hasClass("normal"))
   {
-    $(".button").css("backgroundImage", "url('../images/button_hover.svg')").removeClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_hover.svg')").removeClass("normal");
   }
   else
   {
-    $(".button").css("backgroundImage", "url('../images/button_normal.svg')").addClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_normal.svg')").addClass("normal");
   }
 });
