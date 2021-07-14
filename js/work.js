@@ -32,17 +32,20 @@ mybutton = document.getElementById("scrollIcon");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  mybutton.style.display = "block";
-} else {
-  mybutton.style.display = "none";
-}
+    // alert("hit0");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      // alert("hit1");
+      mybutton.style.display = "block";
+  } else {
+      // alert("hit2");
+      mybutton.style.display = "none";
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
 

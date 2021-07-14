@@ -58,7 +58,7 @@ h4
 }
 
 #scrollIcon{
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 3vw; /* Place the button 30px from the right */
