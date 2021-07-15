@@ -3,7 +3,7 @@ $(".navIcon").on("click", function(){
   if($(this).hasClass("closed"))
   {
       // alert("closed");
-      $(this).attr("src", "images/site_images/mobile_button_pressed").removeClass("closed");
+      $(this).attr("src", "images/site_images/mobile_button_pressed.svg").removeClass("closed");
       $("nav").css("visibility", "visible");
   }
   else

@@ -3,14 +3,16 @@ $(".navIcon").on("click", function(){
     if($(this).hasClass("closed"))
     {
         // alert("closed");
-        $(this).attr("src", "images/site_images/mobile_button_pressed").removeClass("closed");
+        $(this).attr("src", "images/site_images/mobile_button_pressed.svg").removeClass("closed");
         $("nav").css("visibility", "visible");
+        $("#navigation").css("pointerEvents", "all");
     }
     else
     {
         // alert("open");
         $(this).attr("src", "images/site_images/mobile_button_normal.svg").addClass("closed");
         $("nav").css("visibility", "hidden");
+        $("#navigation").css("pointerEvents", "none");
     }
 
 });
