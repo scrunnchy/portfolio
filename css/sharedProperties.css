@@ -103,7 +103,7 @@ nav
 
 #navigation
 {
-
+    pointer-events: none;
 }
 
 nav ul

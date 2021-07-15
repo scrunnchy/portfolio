@@ -4,6 +4,13 @@ header
 {   
     background-image: url("../images/site_images/header_portrait2.png");
     background-position: right;
+  
+    height: auto;
+
+    background-color: #fff0e5;
+    position: unset;
+
+    padding-bottom: 3rem;
 }
 
 nav .button{
@@ -55,8 +62,8 @@ nav .button{
     
     header
     {
-        background-size: 100%;
-        background-position: right;
+        background-position: top;
+        background-size: 100%;     
     }
 
     #name
