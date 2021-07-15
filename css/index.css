@@ -33,7 +33,7 @@ header
     font-size: 8vw;
 }
 
-/* -------------- leftProjectPreview selectors -------------- */
+/* -------------- projectPreview selectors -------------- */
 
 .leftProjectPreview
 {
@@ -42,133 +42,82 @@ header
 
 .backgroundContent
 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto;
 }
 
-.leftProjectPreview img
+.left
 {
-    max-width: 737px;
-    max-height: 431px;
+    grid-template-areas: 
+    "desc desc"
+    "image details";
 }
 
-.leftProjectPreview article
-{
-    background-color: #ffccc1;
-
-    text-align: left;
-    display: inline-block;
-    width: 300px;
-
-    position: absolute;
-    top: 150px;
-    right: 40vw;
-
-    border: 5px solid #fffbf6;
-    border-radius: 40px;
-}
-
-.leftProjectPreview article p
-{
-    margin: 20px;
-}
-
-.leftProjectPreview article h3
-{
-    margin: -5px 15px;
-}
-
-.leftProjectPreview article h4
-{
-    margin: 0px 30px;
-}
-
-#leftBox
-{
-    /* background-color: red; */
-    margin-right: 8vw;
-    margin-top: 2rem;
-    text-align: left;
-}
-
-#leftBox a
-{
-    text-decoration: none;
-}
-
-#leftBox a:hover
-{
-    text-decoration-line: underline;
-}
-
-.leftProjectPreview button
-{
-    margin-top: 3rem;
-}
-
-/* -------------- rightProjectPreview selectors -------------- */
-
-.rightProjectPreview
-{
+.right{
     background-color: #ffe5df;
-    position: relative;
+    grid-template-areas: 
+    "desc desc"
+    "details image";
 }
 
-.rightProjectPreview img
+.projectPreview img
 {
-    max-width: 737px;
-    max-height: 431px;
+    grid-area: image;
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
-.rightProjectPreview article
+.projectPreview article
 {
+    grid-area: desc;
     background-color: #ffccc1;
 
     text-align: left;
     display: inline-block;
-    width: 300px;
-
-    position: absolute;
-    top: 150px;
-    left: 40vw;
+    width: 70%;
+    margin: 30px auto;
 
     border: 5px solid #fffbf6;
     border-radius: 40px;
 }
 
-.rightProjectPreview article p
+.projectPreview article p
 {
-    margin: 20px;
+    margin: 20px 50px;
+    transform: translate(0, -20px);
 }
 
-.rightProjectPreview article h3
+.projectPreview article h3
 {
-    margin: -5px 15px;
+    transform: translate(0, -30px);
+    margin: -5px 40px;
+    text-align: center;
 }
 
-.rightProjectPreview article h4
+.projectPreview article h4
 {
+    text-align: right;
     margin: 0px 30px;
 }
 
-#rightBox
+#textBox
 {
-    margin-left: 8vw;
-    margin-top: 2rem;
+    grid-area: details;
+    margin:2rem 5vw;
     text-align: left;
 }
 
-#rightBox a
+#textBox a
 {
     text-decoration: none;
 }
 
-#rightBox a:hover
+#textBox a:hover
 {
     text-decoration-line: underline;
 }
 
-.rightProjectPreview button
+.projectPreview button
 {
     margin-top: 3rem;
 }
@@ -201,67 +150,57 @@ header
     
     text-shadow: 2px 2px #473629;
     cursor: pointer;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:hover
+{
+    color: transparent;
+    text-shadow: 2px 2px transparent;
 }
 
 .sp0
 {
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
     url("../images/projects/DarkestDungeonIcons/icons.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .sp1
 {
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
     url("../images/projects/WitcherHUD/Witcher_testScene.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .sp2
 {
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
     url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .sp3
 {
     background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
     url("../images/projects/ChangeMGMT/home.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .sp0:hover
 {
     background-image: url("../images/projects/DarkestDungeonIcons/icons.png");
-    color: transparent;
-    text-shadow: 2px 2px transparent;
 }
 
 .sp1:hover
 {
     background-image: url("../images/projects/WitcherHUD/Witcher_testScene.png");
-    color: transparent;
-    text-shadow: 2px 2px transparent;
 }
 
 .sp2:hover
 {
     background-image: url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
-    color: transparent;
-    text-shadow: 2px 2px transparent;
 }
 
 .sp3:hover
 {
     background-image: url("../images/projects/ChangeMGMT/home.png");
-    color: transparent;
-    text-shadow: 2px 2px transparent;
 }
 
 /* -------------- mobile queries -------------- */
@@ -272,40 +211,32 @@ header
     
     .backgroundContent
     {
-        justify-content: unset;
-        flex-direction: column;
+        grid-template-columns: unset;
+        grid-template-rows: auto;
+    }
+
+    .left{
+        grid-template-areas: 
+        "desc"
+        "image"
+        "details";
+    }
+
+    .right{
+        grid-template-areas: 
+        "desc"
+        "image"
+        "details";
     }
     
-    .leftProjectPreview img
+    .projectPreview img
     {
-        max-width: 100%;
+        max-width: 90%;
         max-height: unset;
-    }
-    
-    .leftProjectPreview article
-    {
-        width: 80%;
-        
-        position:unset;
-        margin: 30px auto;
-    }
-    
-    #leftBox
-    {
         margin: 0 auto;
     }
     
-    /* -------------- rightProjectPreview selectors -------------- */
-    
-    /* MAKE IMAGE ON TOP */
-    
-    .rightProjectPreview img
-    {
-        max-width: 100%;
-        max-height: unset;
-    }
-    
-    .rightProjectPreview article
+    .projectPreview article
     {
         width: 80%;
         
@@ -313,7 +244,7 @@ header
         margin: 30px auto;
     }
     
-    #rightBox
+    #textBox
     {
         margin: 0 auto;
     }

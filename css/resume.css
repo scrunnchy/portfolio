@@ -2,8 +2,9 @@
 
 header
 {   
-    background-image: url("../images/site_images/header_portrait2.png");
-    background-position: right;
+    background-image: url("../images/site_images/header_portrait3.png");
+    background-position: top;
+    background-size: contain;
   
     height: auto;
 
@@ -17,41 +18,12 @@ nav .button{
     margin-left: 3vw;
 }
 
-#name
-{
-    color: #473629;
-    
-    position: absolute;
-    bottom: 0;
-    right: 8vw;
-    
-    text-align: left;
-    font-family: 'YesevaOne', cursive;
-    font-size: 8vw;
-}
-
-#about
-{
-    background-color: #FFCCC1;
-    padding: 30px;
-    
-    border:6px solid #473629;
-    border-radius: 40px;
-}
-
-#contact
-{
-    width: 30%;
-    margin: 0 5vw;
-    
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-
-#contact button:hover
-{
-    text-decoration: underline;
+iframe{
+    position:relative;
+    margin-right: 20vw;
+    margin-top: 50px;
+    width: 1000px;
+    height: 1300px;
 }
 
 /* -------------- mobile queries -------------- */
