@@ -2,9 +2,9 @@
 
 header
 {   
-    background-image: url("../images/site_images/header_portrait3.png");
+    background-image: url("../images/site_images/header_portrait4.png");
     background-position: top;
-    background-size: contain;
+    background-size:cover;
   
     height: auto;
 
@@ -34,6 +34,7 @@ iframe{
     
     header
     {
+        background-image: url("../images/site_images/header_portrait3.png");
         background-position: top;
         background-size: 100%;     
     }
@@ -63,6 +64,13 @@ iframe{
     #contact button
     {
         align-self: unset;
+    }
+
+    iframe{
+        margin-right: unset;
+        margin-top: 200px;
+        width: 90%;
+        height: 500px;
     }
 
 }

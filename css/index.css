@@ -243,7 +243,14 @@ header
         position:unset;
         margin: 30px auto;
     }
-    
+
+    .projectPreview article h3
+    {
+        text-align: left;
+        transform: unset;
+        margin-bottom: 2px;;
+    }
+        
     #textBox
     {
         margin: 0 auto;
