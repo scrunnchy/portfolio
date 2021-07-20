@@ -1,0 +1,68 @@
+/* -------------- Navigation and Hero selectors -------------- */
+
+header
+{   
+    background-image: url("../images/site_images/header_portrait3.png");
+    background-position: top;
+    background-size: contain;
+  
+    height: auto;
+
+    background-color: #fff0e5;
+    position: unset;
+
+    padding-bottom: 3rem;
+}
+
+nav .button{
+    margin-left: 3vw;
+}
+
+iframe{
+    position:relative;
+    margin-right: 20vw;
+    margin-top: 50px;
+    width: 1000px;
+    height: 1300px;
+}
+
+/* -------------- mobile queries -------------- */
+
+@media screen and (max-width: 1000px) {
+    
+    /* -------------- Navigation and Hero selectors -------------- */
+    
+    header
+    {
+        background-position: top;
+        background-size: 100%;     
+    }
+
+    #name
+    {
+        top: 4rem;
+        bottom:unset;
+        left: 10vw;
+    }
+    
+    #about
+    {
+        margin-top: 60%;
+        justify-items: center;
+        padding: 30px;
+
+        font-size: 30px;
+    }
+    
+    #contact
+    {
+        width: 90%;
+        margin: 0 3vw;
+    }
+    
+    #contact button
+    {
+        align-self: unset;
+    }
+
+}

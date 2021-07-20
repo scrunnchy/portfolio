@@ -123,7 +123,7 @@ header
 }
 
 /* -------------- carousel selectors -------------- */
-#carousel
+#sideProjects
 {
     position: relative;
 }
@@ -132,7 +132,8 @@ header
 {
     display:flex;
     justify-content:space-around;
-    margin: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .item
@@ -142,65 +143,34 @@ header
     color: #fffbf6;
     font-size: 30px;
 
-    padding-top: 25px;
-
-    min-height: 250px;
-    width: 437px;
-    margin: 5px;
+    max-height: 350px;
+    width: 25%;
+    margin: 50px 5px;
     
     text-shadow: 2px 2px #473629;
     cursor: pointer;
     
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3));
+}
+
+.item img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 50%;
+    
+}
+
+.item img:hover{
+    opacity: 100%;
+    object-fit:scale-down;
 }
 
 .item:hover
 {
-    color: transparent;
+    color: #473629;
     text-shadow: 2px 2px transparent;
-}
-
-.sp0
-{
-    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
-    url("../images/projects/DarkestDungeonIcons/icons.png");
-}
-.sp1
-{
-    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)), 
-    url("../images/projects/WitcherHUD/Witcher_testScene.png");
-}
-.sp2
-{
-    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
-    url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
-}
-.sp3
-{
-    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3)),  
-    url("../images/projects/ChangeMGMT/home.png");
-}
-
-.sp0:hover
-{
-    background-image: url("../images/projects/DarkestDungeonIcons/icons.png");
-}
-
-.sp1:hover
-{
-    background-image: url("../images/projects/WitcherHUD/Witcher_testScene.png");
-}
-
-.sp2:hover
-{
-    background-image: url("../images/projects/PepsiHorror/pepsi\ horror_splash.png");
-}
-
-.sp3:hover
-{
-    background-image: url("../images/projects/ChangeMGMT/home.png");
+    background-image: unset;
 }
 
 /* -------------- mobile queries -------------- */
@@ -261,11 +231,15 @@ header
     #items
     {
         flex-wrap: wrap;
+        flex-direction: column;
     }
     
     .item
     {
         font-size: 30px;
+        max-height: 350px;
+        width: 75%;
+        margin: 50px auto;
     }
     
 }

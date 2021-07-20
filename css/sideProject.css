@@ -1,0 +1,122 @@
+/* -------------- Navigation and Hero selectors -------------- */
+
+header
+{   
+    margin-top: 1rem;
+    height: auto;
+}
+
+nav .button{
+    margin-left: 3vw;
+}
+
+/* -------------- Carousel selectors -------------- */
+
+.carousel{
+    margin-bottom: 30px;
+}
+
+.carousel-inner{
+    height:100vh;
+}
+
+.carousel-item img{
+    max-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%473629' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%473629' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators button{
+
+    
+}
+
+.carousel-indicators .active{
+    background-color: #db5e5f;
+} */
+
+/* -------------- card selectors -------------- */
+
+.details{
+    display: flex;
+}
+
+.row{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 40%;
+    margin: 40px 5%;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+/* -------------- Navigation and Hero selectors -------------- */
+
+
+nav .button{
+    margin-left: 0;
+}
+
+/* -------------- Carousel selectors -------------- */
+
+.carousel{
+    margin-bottom: 30px;
+}
+
+.carousel-inner{
+    height:50vh;
+}
+
+.carousel-item img{
+    max-height: 50vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%473629' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%473629' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators button{
+
+    
+}
+
+.carousel-indicators .active{
+    background-color: #db5e5f;
+} */
+
+/* -------------- card selectors -------------- */
+
+.details{
+    display: flex;
+}
+
+.row{
+    flex-direction: column;
+}
+
+.card{
+    width: 80%;
+    margin: 40px auto;
+}
+
+}

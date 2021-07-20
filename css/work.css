@@ -7,7 +7,32 @@ header
 }
 
 nav .button{
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
+}
+
+.flex-column{
+    justify-self: flex-start;
+    position:fixed;
+    top: 10rem;
+    margin-left: 2vw;
+
+    background-color: #fff0e5;
+    border: 10px solid #fffbf6;
+    border-radius: 40px;
+
+    z-index: 99;
+    
+    /* display: none; */
+}
+
+
+.flex-column li, .flex-column a{
+    text-align: left;
+    text-decoration: none;
+}
+
+.flex-column li:hover, .flex-column a:hover{
+    text-decoration: underline;
 }
 
 /* -------------- Overview selectors -------------- */
@@ -152,6 +177,23 @@ li{
 
 @media screen and (max-width: 1000px) {
 
+    .flex-column{
+        width: 100%;
+        justify-self: center;
+        position:fixed;
+        top: unset;
+        bottom: 0px;
+        margin-left: unset;
+        
+        z-index: 97;
+        border-radius: 40px 40px 0 0;
+        display:unset;
+    }
+
+    .nav-item{
+        display: inline-block;
+        margin: unset;
+    }
     /* -------------- Overview selectors -------------- */
 
     #overview

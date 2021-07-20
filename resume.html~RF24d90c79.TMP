@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/sharedProperties.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Kindra Lingenfelter Work</title>
+</head>
+
+<body>
+
+<div id="floatBackground">
+
+    <header>
+        <img src="images/site_images/mobile_button_normal.svg" class="navIcon closed">
+        <div id="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="color:#473629">Home</a></li>
+                    <li><a href="index.html#workSection" style="color:#473629">Work</a></li>
+                    <li><a href="contact.html" style="color:#473629">Contact</a></li>
+                    <button class="button normal"><a href="#" style="color:#473629">Resume</a></button>
+                    <a href="https://www.linkedin.com/in/kindra-lingenfelter/"><i class="fa fa-linkedin fa-2x"></i></a>
+                </ul>
+            </nav>
+        </div>
+
+        <iframe src="images/site_images/Censored_Resume.pdf"> </iframe>
+    </header>
+
+
+    <div class="footer">
+        <ul>
+            <li><a href="index.html" style="color:#473629">Home</a></li>
+            <li><a href="index.html#workSection" style="color:#473629">Work</a></li>
+            <li><a href="contact.html" style="color:#473629">Contact</a></li>
+            <li><a href="resume.html" style="color:#473629">Resume</a></li>
+            <a href="https://www.linkedin.com/in/kindra-lingenfelter/"><i class="fa fa-linkedin fa-3x"></i></a>
+        </ul>
+    </div>
+
+    <button src="images/flower.jpg" id="scrollIcon" onclick="topFunction()" title="Go to top"></button>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="js/sharedScripts.js"></script>
+</body>
+</html> 
