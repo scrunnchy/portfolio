@@ -6,8 +6,8 @@ header
     background-position: center;
 }
 
-nav .button{
-    /* margin-left: 3vw; */
+#scrollIcon{
+    bottom: 50px; 
 }
 
 .flex-column{
@@ -22,7 +22,7 @@ nav .button{
 
     z-index: 99;
     
-    /* display: none; */
+    display: none;
 }
 
 

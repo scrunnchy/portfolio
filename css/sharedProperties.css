@@ -59,18 +59,21 @@ h4
 }
 
 #scrollIcon{
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 3vw; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 10px solid #fffbf6;
-    border-radius: 40px;
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 2vw; 
+    z-index: 99; 
+    border: 0px solid transparent;
+    border-radius: 50%;
+    outline: none; 
+    background-image: url("/images/site_images/scroll_to_top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    cursor: pointer; 
+    padding: 15px; 
 }
 
 /* -------------- Navigation and Hero selectors -------------- */
@@ -100,11 +103,6 @@ nav
     position: absolute;
     visibility:hidden;
     cursor: pointer;
-}
-
-#navigation
-{
-
 }
 
 nav ul
