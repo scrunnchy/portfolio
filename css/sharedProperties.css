@@ -283,7 +283,7 @@ text-decoration-line: underline;
         pointer-events: none;
     }
 
-    nav ul
+    #navigation ul
     {
         /* OPEN DRAWER */
         width: 100%;
@@ -292,20 +292,20 @@ text-decoration-line: underline;
         background-color: unset;
     }
 
-    nav li
+    #navigation li
     {
         /* OPEN DRAWER */
         margin-top: 4rem;
     }
 
-    nav i
+    #navigation i
     {
         /* OPEN DRAWER */
         margin-top: 5rem;
         margin-left: 0;
     }
 
-    nav a
+    #navigation a
     {
         /* OPEN DRAWER */
         letter-spacing: 3px;

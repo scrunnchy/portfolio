@@ -35,7 +35,7 @@ header
 
 /* -------------- projectPreview selectors -------------- */
 
-.leftProjectPreview
+.projectPreview
 {
     position: relative;
 }
@@ -104,6 +104,10 @@ header
 {
     grid-area: details;
     margin:2rem 5vw;
+}
+
+#textBox li, #textBox p
+{
     text-align: left;
 }
 
@@ -150,7 +154,7 @@ header
     text-shadow: 2px 2px #473629;
     cursor: pointer;
     
-    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0.3));
+    background-image: linear-gradient(rgba(219, 94, 95, 1), rgba(255, 204, 193, 0));
 }
 
 .item img{
@@ -158,12 +162,14 @@ header
     height:100%;
     object-fit: cover;
     opacity: 50%;
+    transition: all .2s ease-in-out; 
     
 }
 
 .item img:hover{
     opacity: 100%;
     object-fit:scale-down;
+    transform: scale(1.2); 
 }
 
 .item:hover
@@ -171,11 +177,13 @@ header
     color: #473629;
     text-shadow: 2px 2px transparent;
     background-image: unset;
+
 }
 
 /* -------------- mobile queries -------------- */
 
 @media screen and (max-width: 1000px) {
+
 
     /* -------------- leftProjectPreview selectors -------------- */
     
@@ -184,19 +192,21 @@ header
         grid-template-columns: unset;
         grid-template-rows: auto;
     }
-
+    
     .left{
         grid-template-areas: 
         "desc"
         "image"
         "details";
+        padding-bottom: 30px; 
     }
-
+    
     .right{
         grid-template-areas: 
         "desc"
         "image"
         "details";
+        padding-bottom: 30px; 
     }
     
     .projectPreview img
@@ -225,7 +235,7 @@ header
     {
         margin: 0 auto;
     }
-    
+
     /* -------------- carousel selectors -------------- */
 
     #items

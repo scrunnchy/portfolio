@@ -43,16 +43,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
-
-
-// $(".button").hover(function(){
-//   // alert("hit");
-//   if($(this).hasClass("normal"))
-//   {
-//     $(this).css("backgroundImage", "url('../images/site_images/button_hover.svg')").removeClass("normal");
-//   }
-//   else
-//   {
-//     $(this).css("backgroundImage", "url('../images/site_images/button_normal.svg')").addClass("normal");
-//   }
-// });

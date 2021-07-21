@@ -201,6 +201,10 @@ nav .button{
         display: inline-block;
         margin: unset;
     }
+
+    nav .button{
+        margin-left: unset;
+    }
     /* -------------- Overview selectors -------------- */
 
     #overview
