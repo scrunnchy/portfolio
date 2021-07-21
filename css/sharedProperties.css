@@ -146,7 +146,7 @@ text-decoration-line: underline;
 
 .button
 {
-    background-image: url("../images/site_images/button_normal.svg");
+    /* background-image: url("../images/site_images/button_normal.svg"); */
     background-repeat: no-repeat;
     background-color: transparent;
     border-color: transparent;
