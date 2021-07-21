@@ -6,9 +6,6 @@ header
     background-position: center;
 }
 
-#scrollIcon{
-    bottom: 50px; 
-}
 
 .flex-column{
     justify-self: flex-start;
@@ -188,6 +185,10 @@ li{
         z-index: 97;
         border-radius: 40px 40px 0 0;
         display:unset;
+    }
+
+    #scrollIcon{
+        bottom: 120px; 
     }
 
     .nav-item{
