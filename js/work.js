@@ -81,10 +81,10 @@ $(".button").hover(function(){
   // alert("hit");
   if($(this).hasClass("normal"))
   {
-    $(this).css("backgroundImage", "url('/images/site_images/button_hover.svg')").removeClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_hover.svg')").removeClass("normal");
   }
   else
   {
-    $(this).css("backgroundImage", "url('/images/site_images/button_normal.svg')").addClass("normal");
+    $(this).css("backgroundImage", "url('../images/site_images/button_normal.svg')").addClass("normal");
   }
 });

@@ -2,7 +2,7 @@
 
 header
 {   
-    background-image: url("/images/site_images/header_portrait4.png");
+    background-image: url("../images/site_images/header_portrait4.png");
     background-position: top;
     background-size:cover;
   

@@ -2,7 +2,7 @@
 
 header
 {   
-    background-image: url("/images/site_images/Header_portrait.png");
+    background-image: url("../images/site_images/Header_portrait.png");
     background-position: right;
 }
 
