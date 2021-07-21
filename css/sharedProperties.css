@@ -67,7 +67,7 @@ h4
     border: 0px solid transparent;
     border-radius: 50%;
     outline: none; 
-    background-image: url("/images/site_images/scroll_to_top");
+    background-image: url("../images/site_images/scroll_to_top.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 80px;
