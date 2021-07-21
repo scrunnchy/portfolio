@@ -6,6 +6,13 @@ header
     background-position: center;
 }
 
+nav ul{
+    margin-top: 1rem;
+}
+
+nav .button{
+    margin-left: 3vw;
+}
 
 .flex-column{
     justify-self: flex-start;
@@ -22,7 +29,6 @@ header
     display: none;
 }
 
-
 .flex-column li, .flex-column a{
     text-align: left;
     text-decoration: none;
@@ -30,7 +36,7 @@ header
 
 .flex-column li:hover, .flex-column a:hover{
     text-decoration: underline;
-}
+} 
 
 /* -------------- Overview selectors -------------- */
 
@@ -49,7 +55,7 @@ header
     list-style: none;
 }
 
-li{
+#overview li{
     margin-right: 10%;
 }
 

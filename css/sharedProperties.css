@@ -105,7 +105,7 @@ nav
     cursor: pointer;
 }
 
-nav ul
+#navigation ul
 {
     width:100%;
     background-color: #fffbf6;
@@ -118,20 +118,20 @@ nav ul
     justify-content: flex-start;
 }
 
-nav li
+#navigation li
 {
     margin-top: 1.5rem;
     margin-left: 3vw;
 }
 
-nav i
+#navigation i
 {
     margin-top: 1rem;
     margin-left: 15vw;
     color: #473629;
 }
 
-nav a
+#navigation a
 {
     letter-spacing: 3px;
     text-decoration: none;
@@ -139,7 +139,7 @@ nav a
     font-size: 30px;
 }
 
-nav a:hover
+#navigation a:hover
 {
 text-decoration-line: underline;
 }
