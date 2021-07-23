@@ -46,7 +46,7 @@ h4
 #floatBackground
 {
     background-color: #fff0e5;
-    box-shadow: 9px 9px 20px #db5e5f;
+    box-shadow: 9px 9px 20px rgba(219,94,95,1);
 
     width: 90vw;
     position:static;

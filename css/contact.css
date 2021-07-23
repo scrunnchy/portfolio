@@ -11,6 +11,7 @@ header
     position: unset;
 
     padding-bottom: 3rem;
+    position: relative;
 }
 
 nav .button{
@@ -22,12 +23,12 @@ nav .button{
     color: #473629;
     
     position: absolute;
-    bottom: 0;
-    right: 8vw;
+    bottom: 0rem;
+    right: 2vw;
     
     text-align: left;
     font-family: 'YesevaOne', cursive;
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 #about
@@ -37,11 +38,13 @@ nav .button{
     
     border:6px solid #473629;
     border-radius: 40px;
+
+    text-align: left;
 }
 
 #contact
 {
-    width: 30%;
+    width: 50%;
     margin: 0 5vw;
     
     display: flex;
