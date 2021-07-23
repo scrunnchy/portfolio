@@ -42,7 +42,7 @@ nav .button{
 #overview
 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
 }
 
 
@@ -59,7 +59,7 @@ nav .button{
 
 #specs
 {
-    margin-left: 15vw;
+    margin-left: 10vw;
 }
 
 #tools
@@ -95,11 +95,12 @@ nav .button{
 #preview
 {
     max-width: 80%;
+    max-height: 500px;
     transition: all .2s ease-in-out; 
 }
 
 #preview:hover{
-    transform: scale(1.5) translate(-5vw, 0); 
+    transform: scale(2.0) translate(-6vw, 0); 
 }
 
 #rightBox ul
@@ -163,6 +164,7 @@ nav .button{
 #results img
 {
     max-height: 800px;
+    margin-bottom: 20px;
 }
 
 #results p

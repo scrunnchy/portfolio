@@ -62,6 +62,11 @@ nav .button{
     border-color: transparent;
 }
 
+.card img, .card video{
+    max-height: 400px;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 1000px) {
 /* -------------- Navigation and Hero selectors -------------- */
 
