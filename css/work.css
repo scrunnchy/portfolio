@@ -146,6 +146,24 @@ nav .button{
     transform: scale(1.5); 
 }
 
+.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row video{
+    max-width: 50%;
+    padding: 3rem;
+
+    transition: all .2s ease-in-out; 
+}
+
+.row video:hover{
+    transform: scale(1.5); 
+}
+
+
 .header
 {
     grid-area: header;
