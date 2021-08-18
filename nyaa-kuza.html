@@ -153,12 +153,40 @@
     <div class="phase">
         <div class="section">
             <h3 class="header">Ideation</h3>
-            <p class="text"> ...</p>
+            <p class="text">
+                &emsp; We had lofty goals for Nyaa in the beginning,
+                we envisioned a narratively-driven RPG with brawler elements and
+                the artists quickly created concept sketches that cemented the
+                style and setting. Using those sketches and the discussions we 
+                were having as a team, I created a moodboard for the UI. I wanted 
+                to evoke the feeling of a Japanese city like Tokyo with the use of 
+                neon, paper lanterns, and textures from traditional kimonos and 
+                tattoos. Since our game was sure to have fighting and dialogue, 
+                I took UX inspiration from fighting games and role-playing games.
+                The writers made many requests about how the dialogue UX/UI should
+                look and function, and I endeavored to synthesize conflicting 
+                requests into a design that would satisfy everyone, but most 
+                importantly be intuitive to the player. 
+                <br>
+                &emsp; As development continued, I began designing the fighting HUD. I
+                originally envisioned the health bar as a large paw where each toe 
+                would act as a marker of health, then once I began considering the
+                rage meter I updated my design to have the paw act as a single object.
+                The rage meter was inspired by Doom Guy’s face in the original Doom;
+                I wanted to show an increase in rage as well as change facial 
+                expressions. Finally, the on-screen inventory would change color as
+                the ability became available.
+            </p>
             <img class="image" src="images/projects/Nyaa-kuza/00 pre-alpha/pre-alpha_ideation.png" alt="">
         </div>
         <div class="section">
             <h3 class="header">Unity 3D</h3>
-            <p class="text">...</p>
+            <p class="text">
+                &emsp; Originally, we had chosen Unity 3D to develop the game. We were able to build
+                out a basic exploration level and combat level. We had decided to use an 
+                isometric view in the exploration level and a side-view in combat (inspired 
+                by fighting games). Much of the basic layout of the UX/UI was mapped out at 
+                this stage.</p>
             <!-- <img class="image" src="images/projects/Nyaa-kuza/" alt=""> -->
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/00 pre-alpha/pre-alpha_unity3d_dialogue03.mp4" type="video/mp4">
@@ -166,7 +194,15 @@
         </div>
         <div class="section">
             <h3 class="header">Unity 2D</h3>
-            <p class="text"> ...</p>
+            <p class="text">
+                &emsp; It quickly became evident that Unity 3D would fight us most of the way, 
+                the physics of the isometric level was extremely floaty and difficult to 
+                wrangle, and level building took a long time as few on the team had prior 
+                experience with 3D level building. It was risky, but would save us a 
+                headache in the long run, so we scrapped the 3D version of the game and 
+                rebuilt it entirely in Unity 2D. The physics reacted much better, though 
+                there were still problems, and level building was much faster. At this 
+                stage I was able to play around with different designs for the UX/UI.</p>
             <!-- <img class="image" src="images/projects/Nyaa-kuza/" alt=""> -->
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/00 pre-alpha/pre-alpha_iso_exploretofight.mp4" type="video/mp4">
@@ -174,7 +210,12 @@
         </div>
         <div class="section">
             <h3 class="header">Main Menu</h3>
-            <p class="text"> ...</p>
+            <p class="text">
+                &emsp; I also laid the groundwork for the main menu during the 2D rebuild, 
+                this was also the time when the UI artist, Dylan Young, provided the 
+                first official UI assets for me to plug into the UI. At this time the 
+                team did not have an idea of what the background art for the main menus 
+                would look like, and so the layouts I designed were mostly placeholders.</p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/00 pre-alpha/pre-alpha_mainMenu.mp4" type="video/mp4">
             </video>
@@ -188,19 +229,43 @@
     <div class="phase pink">
         <div class="section">
             <h3 class="header">Menu Iterations</h3>
-            <p class="text">...</p>
+            <p class="text">
+                &emsp; The artist who illustrated our menu and dialogue backgrounds,  
+                <a href=”https://mannydraws.artstation.com/”>Manny Herrera</a>, 
+                explained to me that he had a vision of the main menu: he would provide an 
+                illustration that the camera would slide down, finally coming to rest and the 
+                UI elements would fade in. Manny provided me with a rough illustration and 
+                Dylan also created our logo at this stage. I used these to design the final 
+                layout and build out the other menus. </p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/01 alpha/alpha_menus_full.mp4" type="video/mp4">
             </video>
         </div>
         <div class="section">
             <h3 class="header">Dialogue Iterations</h3>
-            <p class="text">...</p>
+            <p class="text">
+                &emsp; I rapidly iterated on the dialogue UX with the input of the writers. They 
+                referenced UI’s from games like <i>Persona 5</i> and <i>Stardew Valley</i>, combining these 
+                two disparate UX layouts proved to be a bit difficult, and so I created a 
+                number of mock-ups in the engine to show potential layouts given the 
+                inspiration, I also gave my opinion on which design would be most intuitive for 
+                the player. We finally agreed on a layout and I added the dialogue assets that 
+                Dylan had finished.</p>
             <img class="image" src="images/projects/Nyaa-kuza/01 alpha/alpha_dialogue_iteration.png" alt="">
         </div>
         <div class="section">
-            <h3 class="header">HUD Iterations - Cutting Isometric View</h3>
-            <p class="text">...</p>
+            <h3 class="header">HUD Implementation - Cutting Isometric View</h3>
+            <p class="text">
+                &emsp; It became evident that, similar to Unity 3d, the isometric view 
+                was eating up a lot of time. The physics were still strange, and our artists 
+                had to produce twice as many assets than if we were to stick with a single 
+                view. In the interest of protecting our time and creating a game we could be 
+                proud of, we decided as a team to cut out the isometric view, switching the 
+                exploration levels to be side-view as well. 
+                <br>This is also when the engineers implemented the fighting HUD. Some of our 
+                planned mechanics had been dropped or changed and after seeing how it was 
+                implemented I began brainstorming different designs.
+            </p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/01 alpha/alpha_fight_01.mp4" type="video/mp4">
             </video>
@@ -214,17 +279,42 @@
     <div class="phase">
         <div class="section">
             <h3 class="header">HUD Iterations</h3>
-            <p class="text">...</p>
+            <p class="text">
+                &emsp; During my engineering-inspired brainstorming, I looked at 
+                many brawler-type games for inspiration, including <i>Brawlhala</i> and 
+                <i>Speed Brawl</i>. I sent a few rough sketches of the health/rage widget to 
+                the UI artist, Dylan, to get his input on what design he liked most. I 
+                also realized my original conception of the ‘inventory orbs’, as I had 
+                begun calling them, took too much space on the screen and had the 
+                potential to obfuscate the items displayed in the element, as well as 
+                simply not matching the asset that Dylan had been designing. I took a 
+                screenshot into Photoshop and made a mockup of new inventory UI assets 
+                that I felt better fit the style and would not obscure the screen or 
+                objects inside them. I also passed this design along to Dylan and we 
+                discussed some alternate designs, including an accessibility feature 
+                to show the keyboard command for the ability on the corresponding 
+                element.</p>
             <img class="image" src="images/projects/Nyaa-kuza/02 beta/beta_HUD_ideation.png" alt="">
         </div> 
         <div class="section">
             <h3 class="header">Dialogue Assets</h3>
-            <p class="text"> ...</p>
+            <p class="text"> 
+                &emsp; Dylan provided me with a wealth of dialogue assets, he 
+                gave me many different color palettes to choose from, however I 
+                initially went with a simple all-pink, except for the ‘skip’ button 
+                which had been added by the engineers to make debugging easier 
+                (though it had the added benefit of improving player experience).</p>
             <img class="image" src="images/projects/Nyaa-kuza/02 beta/beta_dialogue_assets_01.png" alt="">
         </div> 
         <div class="section">
             <h3 class="header">Map</h3>
-            <p class="text"> ...</p>
+            <p class="text">
+                &emsp; Our illustrator, Manny, provided me with an unfinished 
+                sketch of our map, an isometric view of the game world as a callback 
+                to our earlier iterations of the game. I added this into the map that 
+                had existed only with programmer art until then and set the buttons 
+                for travel above the areas, as well as added a sakura petal particle 
+                effect that another artist, Kerry Slay, had created.</p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/02 beta/beta_map.mp4" type="video/mp4">
             </video>
@@ -237,13 +327,51 @@
 
     <div class="phase pink">
         <div class="section">
+            <h3 class="header">Cutting Exploration</h3>
+            <p class="text">
+                &emsp; Despite cutting 3D and isometric, the exploration level 
+                became worrisome. We had to maintain two separate character 
+                controllers and we did not have time to develop mechanics like quests 
+                that would make the exploration levels feel necessary or unique, so 
+                we decided to once again cut down and remove the exploration 
+                altogether, instead using the dialogue scenes between combat levels to 
+                deliver story beats.</p>
+            <img class="image" src="images/projects/Nyaa-kuza/03 release/release_fight_lv1.png" alt="">
+        </div>
+        <div class="section">
             <h3 class="header">Controls Iterations</h3>
-            <p class="text">...</p>
+            <p class="text">
+                &emsp; We had gone back-and-forth on controls throughout all of 
+                development, and I still think they probably aren’t perfect. We were 
+                running out of development time, we had wanted to add re-mappable 
+                controls, but it was proving difficult to add in before our publishing 
+                date as we had lost three of our five engineers throughout development 
+                and there were still a lot of other engineering concerns to address. I 
+                suggested we instead add three types of control schemes for 
+                accessibility to make up for the lack of remapping, so we set to work 
+                on keyboard-only, keyboard and mouse (a much requested feature), and 
+                controller-only schemes. </p>
             <img class="image" src="images/projects/Nyaa-kuza/03 release/release_controls_iteration.png" alt="">
         </div>
         <div class="section">
             <h3 class="header">Dialogue Iterations</h3>
-            <p class="text">... </p>
+            <p class="text">
+                &emsp; At this time, we received feedback that the UX of the 
+                dialogue was confusing to players. Due to F-shaped pattern reading, 
+                players currently would read the reaction before the main text. I 
+                also realized that the UI buttons were not all using the same color 
+                palette and wanted to set these to the same palette for consistency 
+                across the game. I set out redesigning the UX of the dialogue and I 
+                also added an animated arrow to indicate to the player that the main 
+                dialogue is a button, as previously the writers had been using an 
+                extra dialogue button with ellipses to load the remainder of 
+                truncated text. I decided on a blue color scheme with yellow as a 
+                compliment since much of the game was pink and the yellow would 
+                stand out nicely against our game’s palette. At this stage we also 
+                added in sprite animations to the dialogue UI which helped immensely 
+                with readability. I also added in the sakura particle effect and a 
+                dust particle effect that Kerry made to the background of the 
+                dialogue scenes to add some interest to an otherwise static scene.</p>
             <img class="image" src="images/projects/Nyaa-kuza/03 release/release_dialogue_iteration.png" alt="">
         </div> 
         <div class="row">
@@ -256,7 +384,18 @@
         </div>
         <div class="section">
             <h3 class="header">HUD Iterations</h3>
-            <p class="text">... </p>
+            <p class="text">
+                &emsp; The initial rage meter used the same palette that our 
+                other assets used, including our environmental assets, meaning the 
+                element faded into the background and players usually didn’t notice 
+                when they’re rage was fully charged. Dylan had become a tad busy, so 
+                I stepped in to explore some options. I experimented with different 
+                colors and sent the results to the artists to get their input and they 
+                suggested a gradient between orange and yellow. I updated the color 
+                of the original asset in Illustrator and also updated the particle 
+                effects in the engine. This made a huge difference in visibility for 
+                the rage meter.
+            </p>
             <img class="image" src="images/projects/Nyaa-kuza/03 release/release_rage_ideation.png" alt="">
         </div> 
         <div class="row">
@@ -275,14 +414,32 @@
         </div>
         <div class="section">
             <h3 class="header">Map Iterations</h3>
-            <p class="text">... </p>
+            <p class="text">
+                &emsp; Manny finished the map illustration and once I implemented 
+                it I realized the previous approach I had taken (plain text, no 
+                background) no longer worked on the more detailed background. I 
+                reworked the buttons to use the button assets Dylan created (later 
+                updated to reflect the color scheme of the dialogue buttons), and 
+                added a trail of paws between areas the player had already traveled 
+                between to increase readability. </p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/03 release/release_map01.mp4" type="video/mp4">
             </video>
         </div> 
         <div class="section">
             <h3 class="header">Tutorial Iterations</h3>
-            <p class="text">... </p>
+            <p class="text">
+                &emsp; The tutorial level UI initially had the controls on 
+                screen with the current objective, however, as we added control 
+                schemes, it became apparent that keeping all controls on screen 
+                (without using code, as we were running out of time) would take far 
+                too much screen real estate. I was inspired by Brawlhala’s tutorial 
+                screen which shows a short video paired with the controls to explain 
+                the game’s mechanics. I created similar screens, adding all control 
+                schemes next to the mechanic. The screen appears immediately as the 
+                player enters the level, and though the player cannot access the 
+                screen within the level after closing out of it, they are able to 
+                check the controls through the pause menu.</p>
             <video class="image" playsinline autoplay muted loop>
                 <source src="images/projects/Nyaa-kuza/03 release/release_maptotutorial.mp4" type="video/mp4">
             </video>
@@ -310,9 +467,80 @@
     <div class="phase pink" id="results">
         <img id="finalImage" src="images/projects/Nyaa-kuza/Nyaakuza_Final_Cover.jpg" alt="Final iteration">
         <h3>Reflection</h3>
-        <p>...<br>
-            <b>Future opportunities:</b>...<br>
-            <b>Major takeaways from this project:</b>...</p>
+        <p>Working on Nyaa-kuza!! was a fantastic experience. I learned a great deal 
+            about fighting games, brawlers, dialogue in games, and I not only 
+            continued to learn about Unity, but had the opportunity to help teach my 
+            teammates about it. I especially learned about what it takes to publish a 
+            game and how to effectively lead a team. <br>
+            <b>Future opportunities:</b>If I am ever able to revisit this project, 
+            I would like to add the remappable controls and make the UI dynamically 
+            reflect the changes. I would also adjust some UI animations for 
+            accessibility (for instance, remove flashing/flickering for those with 
+            photosensitive seizures). I would also like to redesign the tutorial level 
+            to allow the player to easily access the example screens I designed from 
+            within the level, as well as the UI within the level to make it more 
+            friendly to controllers, as this was rushed at the end of development. 
+            The main dialogue UI could use more help indicating which character is 
+            speaking, and I would also be interested in revisiting the design entirely 
+            to support scenes with more than two characters on screen. One concept I 
+            had not heard of during the development cycle is that of “red fatigue”-- 
+            that players can be overwhelmed by the amount of red on screen and become 
+            blind to it, leading to important UI callouts fading into the noise of the 
+            game. While we don’t use much pure red, we use a lot of pink, and I would 
+            like to revisit our color palette to avoid pinks so when we use them they 
+            are more effective.<br>
+            <b>Major takeaways from this project:</b> I walked away from this game with 
+            a handful of extremely valuable lessons. I will summarize below:</p>
+            <ul>
+                <li>
+                    Conflict resolution. My experience from my capstone showed me that
+                     things had generally gone well for me in past group projects. 
+                     When my team realized there was interpersonal conflict, I 
+                     reached out to someone I know who has experience in facilitating 
+                     to help me manage the tension on the team. The rest of the team 
+                     supported me and told me how much they appreciated my efforts. I 
+                     want to learn more conflict management skills and proper 
+                     strategies to de-escalate stressful situations.
+                </li>
+                <li>
+                    What it means to lead effectively. I’ve been elected producer 
+                    before, but I didn’t really understand what that meant. I have 
+                    immense respect for anyone in a leadership role, and I would like 
+                    to develop more skills in this area to help support my team.
+                </li>
+                <li>The value of teamwork and how to achieve it. When I was elected 
+                    to the producer position, I did what came naturally to me and 
+                    pulled everyone together to make the decisions and almost 
+                    instantly the previous issues of siloing and a feeling of lack of 
+                    ownership were resolved. Collaboration and trusting our teammates’ 
+                    expertise became an integral part of our momentum.
+                </li>
+                <li>The point isn’t to make a game, it’s to make a team (and a game).
+                    You can’t make a game if you don’t have an effective team, if you 
+                    invest in your team they will deliver because they are invested as 
+                    well. I spoke with others in capstone who were amazed at my team’s 
+                    momentum and willingness to work and the only thing I can explain 
+                    it with is that we respected each other and we didn’t want to let
+                    each other down, and it’s work we wanted to do-- for each other, as 
+                    much as for ourselves.
+                </li>
+                <li>
+                    The devil’s in the details. When the semester was coming to an end, 
+                    it was all about “juice”, and that really hammered home to me that 
+                    the difference between an obvious student game and a well-done 
+                    indie game is really just in the details.
+                </li>
+                <li>
+                    Iteration (and cutting content)! I’m baffled when I look back on 
+                    how much we have iterated on our game, we would not have been able 
+                    to deliver such a quality product without cutting basically 75% of 
+                    what we had planned. We grew comfortable cutting content on this 
+                    team, if something might not get done in time we would always bring 
+                    it up as a possibility, usually that didn’t have to happen, but
+                    we were prepared, and I think that will do us well moving forward.
+                </li>
+            </ul>
+
         <button class="button normal"><a href="https://store.steampowered.com/app/1577450/Nyaakuza/" style="color:#473629">Download</a></button>
     </div>
 <!-- 
