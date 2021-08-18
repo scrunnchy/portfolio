@@ -349,5 +349,9 @@ nav .button{
         width: 100%;
         justify-self: center;
     }
+
+    #results ul{
+        width: 80%;
+    }
     
 }
