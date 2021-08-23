@@ -99,7 +99,7 @@ nav .button{
     transition: all .2s ease-in-out; 
 }
 
-#preview:hover{
+#preview:active{
     transform: scale(2.0) translate(-6vw, 0); 
 }
 
@@ -130,7 +130,7 @@ nav .button{
     "header image"
     "text image"
     "1 image";
-    margin: 2rem;
+    margin: 0rem 0rem 5rem 0rem;
 }
 
 .image{
@@ -142,7 +142,7 @@ nav .button{
     transition: all .2s ease-in-out; 
 }
 
-.image:hover{
+.image:active{
     transform: scale(1.5); 
 }
 
@@ -150,6 +150,7 @@ nav .button{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -5rem;
 }
 
 .row video{
@@ -159,7 +160,23 @@ nav .button{
     transition: all .2s ease-in-out; 
 }
 
-.row video:hover{
+.row video:active{
+    transform: scale(1.5); 
+}
+
+.column{
+    grid-area:image;
+}
+
+.column video{
+    max-width: 80%;
+    margin-left: 8vw;
+    padding: 1rem;
+
+    transition: all .2s ease-in-out; 
+}
+
+.column video:active{
     transform: scale(1.5); 
 }
 
