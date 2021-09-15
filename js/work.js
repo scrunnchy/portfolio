@@ -11,33 +11,33 @@ function scrollFunction() {
 }
 
 
-// Setup isScrolling variable
-var isScrolling;
+// // Setup isScrolling variable
+// var isScrolling;
 
-// Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
+// // Listen for scroll events
+// window.addEventListener('scroll', function ( event ) {
     
-    // Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+//     // Clear our timeout throughout the scroll
+// 	window.clearTimeout( isScrolling );
     
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+// 	// Set a timeout to run after scrolling ends
+// 	isScrolling = setTimeout(function() {
         
-        // Run the callback
-		// console.log( 'Scrolling has stopped.' );
-        hideNav();
+//         // Run the callback
+// 		// console.log( 'Scrolling has stopped.' );
+//         hideNav();
         
-	}, 2000);
+// 	}, 2000);
     
-}, false);
+// }, false);
 
 
 function hideNav(){
-    $(".flex-column").css("display", "none");
+    $("#secondaryNav").css("display", "none");
 }
 
 function showNav(){
-    $(".flex-column").css("display", "block");
+    $("#secondaryNav").css("display", "flex");
 }
 
 $(".navIcon").on("click", function(){

@@ -13,27 +13,19 @@ nav .button{
     margin-left: 3vw;
 }
 
-.flex-column{
-    justify-self: flex-start;
-    position:fixed;
-    top: 10rem;
-    margin-left: 2vw;
+#secondaryNav{
 
-    background-color: #fff0e5;
+    background-color: #fffbf6;
     border: 10px solid #fffbf6;
     border-radius: 40px;
+    width: 80%;
 
     z-index: 99;
-    
-    display: none;
+
+    display:none;
 }
 
-.flex-column li, .flex-column a{
-    text-align: left;
-    text-decoration: none;
-}
-
-.flex-column li:hover, .flex-column a:hover{
+#secondaryNav li:hover, #secondaryNav a:hover{
     text-decoration: underline;
 } 
 

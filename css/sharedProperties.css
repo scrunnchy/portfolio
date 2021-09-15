@@ -47,6 +47,10 @@ a{
     color: #db5e5f;
 }
 
+a:hover{
+    color: #473629;
+}
+
 #floatBackground
 {
     background-color: #fff0e5;
@@ -110,6 +114,10 @@ header
 
 #spontanea header{
     background-image: url('../images/projects/Spontanea/Mockup_2.png');
+}
+
+#gallery header{
+    height: unset;
 }
 
 nav
@@ -200,7 +208,6 @@ text-decoration-line: underline;
     place-content: center;
     width: 100%;
 }
-
 /* -------------- footer selectors -------------- */
 
 .footer

@@ -1,0 +1,19 @@
+nav ul{
+    margin-top: 1rem;
+}
+
+nav .button{
+    margin-left: 3vw;
+}
+
+/* -------------- gallery selectors -------------- */
+
+.g_img{
+    
+    transition: all .2s ease-in-out; 
+}
+
+.g_img:hover{
+    cursor: pointer;
+    transform: scale(1.2); 
+}
