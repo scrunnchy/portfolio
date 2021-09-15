@@ -5,14 +5,3 @@ nav ul{
 nav .button{
     margin-left: 3vw;
 }
-
-/* -------------- gallery selectors -------------- */
-
-
-.g_img{
-    transition: all .2s ease-in-out; 
-}
-
-.g_img:hover{
-    transform: scale(1.2); 
-}
