@@ -158,10 +158,16 @@ nav
     margin-left: 3vw;
 }
 
+#icons
+{
+    position:absolute;
+    right:5vw;
+}
+
 #navigation i
 {
     margin-top: 1rem;
-    margin-left: 15vw;
+    padding-left:30px;
     color: #473629;
 }
 
@@ -217,6 +223,7 @@ text-decoration-line: underline;
 
 .footer
 {
+    padding-top: 10px;
     display: flex;
     justify-content:center;
 
@@ -236,6 +243,7 @@ text-decoration-line: underline;
     margin: 1rem 5vw;
     position: relative;
     text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 .footer a
@@ -253,6 +261,9 @@ text-decoration-line: underline;
 .footer i
 {
     color: #473629;
+    padding-top: 2rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 /* -------------- mobile queries -------------- */
