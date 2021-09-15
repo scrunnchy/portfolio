@@ -3,6 +3,7 @@
     src: url("../fonts/YesevaOne-Regular.ttf");
 }
 
+
 body
 {
     background: rgb(255,204,193);
@@ -12,10 +13,8 @@ body
     display: grid;
     place-items: center;
 
-    font-size: 22px;
-    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
     color: #473629;
 }
 
@@ -31,8 +30,10 @@ h3
 {
     color: #473629;
 
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
 }
 
 h4
@@ -41,7 +42,8 @@ h4
 
     text-transform: capitalize;
 
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -141,6 +143,8 @@ nav
     background-color: #fffbf6;
     list-style: none;
 
+    margin-top: 1rem;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -166,7 +170,7 @@ nav
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #navigation a:hover
@@ -188,13 +192,12 @@ text-decoration-line: underline;
     height: 78px;
 
     cursor: pointer;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color: #473629;
 
-    letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .button:hover{
@@ -337,8 +340,6 @@ text-decoration-line: underline;
     #navigation a
     {
         /* OPEN DRAWER */
-        letter-spacing: 3px;
-        font-size: 30px;
     }
 
     .button
@@ -348,11 +349,6 @@ text-decoration-line: underline;
         width: 233px;
         height: 78px;
         margin-top: 4rem;
-
-        font-size: 20px;
-
-        letter-spacing: 3px;
-        font-size: 30px;
     }
 
      /* -------------- footer selectors -------------- */

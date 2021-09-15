@@ -11,26 +11,26 @@ header
     color: #473629;
 
     position: absolute;
-    top: 2rem;
+    top: 8rem;
     left: 5vw;
 
     text-align: left;
     font-family: 'YesevaOne', cursive;
-    font-size: 9vw;
+    font-size: 8vw;
 }
 
 #designer
 {
     color: #473629;
-    opacity: 16%;
+    opacity: 10%;
 
     position: absolute;
-    top: 22rem;
+    bottom: 1rem;
     left: 10vw;
 
     letter-spacing: 40px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 /* -------------- projectPreview selectors -------------- */
@@ -89,7 +89,7 @@ header
 
 .projectPreview article h3
 {
-    transform: translate(0, -30px);
+    transform: translate(0, -20px);
     margin: -5px 40px;
     text-align: center;
 }
@@ -246,7 +246,6 @@ header
     
     .item
     {
-        font-size: 30px;
         max-height: 350px;
         width: 75%;
         margin: 50px auto;
