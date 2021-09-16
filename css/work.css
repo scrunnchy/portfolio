@@ -15,14 +15,17 @@ nav .button{
 
 #secondaryNav{
 
-    background-color: #fffbf6;
-    border: 10px solid #fffbf6;
-    border-radius: 40px;
-    width: 80%;
+    background-color: #473629;
+    border: 10px solid #473629;
+    width: 100%;
 
     z-index: 99;
 
     display:none;
+}
+
+#secondaryNav a{
+    color: #fffbf6;
 }
 
 #secondaryNav li:hover, #secondaryNav a:hover{
