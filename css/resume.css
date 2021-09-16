@@ -39,33 +39,6 @@ iframe{
         background-size: 100%;     
     }
 
-    #name
-    {
-        top: 4rem;
-        bottom:unset;
-        left: 10vw;
-    }
-    
-    #about
-    {
-        margin-top: 60%;
-        justify-items: center;
-        padding: 30px;
-
-        font-size: 30px;
-    }
-    
-    #contact
-    {
-        width: 90%;
-        margin: 0 3vw;
-    }
-    
-    #contact button
-    {
-        align-self: unset;
-    }
-
     iframe{
         margin-right: unset;
         margin-top: 200px;
