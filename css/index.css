@@ -132,6 +132,11 @@ header
 @media screen and (max-width: 1000px) {
 
 
+    #designer{
+        left: unset;
+        letter-spacing: 30px;
+    }
+
     /* -------------- leftProjectPreview selectors -------------- */
     
     .backgroundContent

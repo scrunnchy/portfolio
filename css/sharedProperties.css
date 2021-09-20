@@ -3,6 +3,16 @@
     src: url("../fonts/YesevaOne-Regular.ttf");
 }
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
 
 body
 {
@@ -17,6 +27,7 @@ body
     font-family: 'Montserrat', sans-serif;
     color: #473629;
 }
+
 
 h2
 {
@@ -79,7 +90,7 @@ a:hover{
     border: 0px solid transparent;
     border-radius: 50%;
     outline: none; 
-    background-image: url("../images/site_images/scroll_to_top.svg");
+    background-image: url("../images/site_images/scroll_to_top_dark.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 80px;
@@ -134,6 +145,7 @@ nav
 {
     position: absolute;
     visibility:hidden;
+    display: none;
     cursor: pointer;
 }
 
@@ -162,12 +174,11 @@ nav
 {
     position:absolute;
     right:5vw;
+    margin-top: 1rem;
 }
 
 #navigation i
 {
-    margin-top: 1rem;
-    padding-left:30px;
     color: #473629;
 }
 
@@ -226,14 +237,6 @@ text-decoration-line: underline;
 {
     position: relative;
     padding: 2rem;
-}
-
-#items
-{
-    display:flex;
-    justify-content:space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .item
@@ -328,20 +331,9 @@ text-decoration-line: underline;
 
 @media screen and (max-width: 1000px) {
 
-
-    h2
-    {
-        font-size: 35px;
-    }
-
-    h3
-    {
-        font-size: 30px;
-    }
-
     h4
     {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #scrollIcon
@@ -368,6 +360,7 @@ text-decoration-line: underline;
         z-index: 99;
 
         visibility: visible;
+        display: block;
         right:2%;
         top: 2%;
         width: 20%;
@@ -399,12 +392,13 @@ text-decoration-line: underline;
         margin-top: 4rem;
     }
 
-    #navigation i
-    {
-        /* OPEN DRAWER */
-        margin-top: 5rem;
-        margin-left: 0;
-    }
+    #icons
+{
+    position:absolute;
+    transform: translateX(-100%);
+    margin-bottom: 1rem;
+}
+
 
     #navigation a
     {
@@ -419,6 +413,20 @@ text-decoration-line: underline;
         height: 78px;
         margin-top: 4rem;
     }
+
+    /* -------------- gallery selectors -------------- */
+
+    #sideProjects
+    {
+        position: relative;
+        padding: unset;
+    }
+
+    .item
+    {
+        padding-bottom: unset;    
+    }
+
 
      /* -------------- footer selectors -------------- */
 

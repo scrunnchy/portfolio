@@ -5,3 +5,9 @@ nav ul{
 nav .button{
     margin-left: 3vw;
 }
+
+@media screen and (max-width: 1000px) {
+    .item{
+        margin: 2rem;
+    }
+}
